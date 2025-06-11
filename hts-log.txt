@@ -1,0 +1,19 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 10 Jun 2025 11:23:00 at http://www.merlionit.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.merlionit.com -O1 "C:\My Web Sites\merlion_copia" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:26:03	Error: 	"Not Found" (404) at link https://www.merlionit.com/public/site/assets/images/img_banner.jpg (from https://www.merlionit.com/merlion-it)
+11:27:47	Error: 	"Forbidden" (403) at link https://www.merlionit.com/blog?s=sustentabilidade (from https://www.merlionit.com/blog)
+11:27:47	Warning: 	Retry after error -4 (No data (connection closed)) at link https://www.merlionit.com/blog?s=desafios%20da%20automa%c3%a7%c3%a3o (from https://www.merlionit.com/blog)
+11:27:47	Warning: 	Retry after error -4 (No data (connection closed)) at link https://www.merlionit.com/blog?s=sistemas%20de%20monitoramento. (from https://www.merlionit.com/blog)
+11:29:30	Error: 	"Not Found" (404) at link https://www.merlionit.com/public/site/assets/images/imgWhatsapp.png (from https://www.merlionit.com/blog/sundar-pichai-o-que-pensa-o-chefao-do-google-sobre-regulacao-e-gasto-de-energia-da-ia)
+11:33:46	Error: 	"Error when decompressing" (-1) at link https://www.merlionit.com/salió-en-los-medios/merlion-it-revoluciona-las-empresas-con-inteligencia-artificial (from https://www.merlionit.com/saiu-na-midia/merlion-it-vira-destaque-em-feira-de-tecnologia-e-inovacao)
+11:36:43	Warning: 	Retry after error -4 (No data (connection closed)) at link https://www.merlionit.com/public/site/assets/css/style.min.css?v=1462778971 (from https://www.merlionit.com/blog?s=import%C3%A2ncia)
+11:36:43	Warning: 	Retry after error -4 (No data (connection closed)) at link https://www.merlionit.com/public/site/assets/css/style.min.css?v=2034362953 (from https://www.merlionit.com/blog?s=constru%C3%A7%C3%A3o%20civil)
+
+HTTrack Website Copier/3.49-2 mirror complete in 14 minutes 19 seconds : 2610 links scanned, 2600 files written (310238244 bytes overall) [141166300 bytes received at 164337 bytes/sec], 197377019 bytes transferred using HTTP compression in 1652 files, ratio 12%, 50.2 requests per connection
+(4 errors, 4 warnings, 0 messages)
