@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 // Middleware genérico para trocar idioma por sufixo _<locale>.html
 app.get('*', (req, res, next) => {
@@ -27,12 +28,18 @@ app.get('*', (req, res, next) => {
   next();
 });
 
+// Arquivos estáticos com prioridade para imagens
+app.use('/public/site/assets/images', express.static(path.join(__dirname, 'www.merlionit.com/public/site/assets/images')));
+app.use('/public/site/assets', express.static(path.join(__dirname, 'www.merlionit.com/public/site/assets')));
+
 // Middleware para garantir que todas as requisições de imagens sejam direcionadas para as mesmas imagens da versão PT
 app.use((req, res, next) => {
   if (req.path.match(/\.(jpg|jpeg|png|gif|svg|webp)$/i)) {
+    console.log('Requisição de imagem:', req.url);
     const locale = req.query.locale;
     if (locale && locale !== 'pt') {
       req.url = req.url.replace(`?locale=${locale}`, '');
+      console.log('URL modificada para:', req.url);
     }
   }
   next();
@@ -43,5 +50,6 @@ app.use(express.static(path.join(__dirname, 'www.merlionit.com')));
 // Fallback: servir quaisquer outros arquivos no diretório raiz (como paths "../merlionit.com/...")
 app.use(express.static(__dirname));
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Servidor Merlion rodando na porta ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Servidor Merlion rodando na porta ${PORT}`);
+});
