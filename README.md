@@ -36,6 +36,8 @@ npm start
 
 ## Implantação no Railway
 
+> Arquivos atualizados com configurações otimizadas para deploy no Railway (railway.json, server.js e .env.example)
+
 1. Faça login no [Railway](https://railway.app/)
 2. Conecte seu repositório GitHub
 3. Selecione este repositório
