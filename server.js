@@ -50,6 +50,8 @@ app.use(express.static(path.join(__dirname, 'www.merlionit.com')));
 // Fallback: servir quaisquer outros arquivos no diretório raiz (como paths "../merlionit.com/...")
 app.use(express.static(__dirname));
 
+// Configuração otimizada para o Railway
+
 app.listen(PORT, () => {
   console.log(`Servidor Merlion rodando na porta ${PORT}`);
 });
